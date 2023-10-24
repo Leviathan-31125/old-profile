@@ -1,0 +1,213 @@
+:root{
+    --main-color: #60412B;
+    --second-color: #B37C57;
+    --third-color: #DDE2E3;
+}
+
+hr{
+    color: #FFFFFF;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #DDE2E3;
+}
+a:hover{
+    color: #9AACB8;
+}
+
+p{
+    text-align: justify;
+}
+
+#navbar{
+    background-color: var(--main-color);
+    color: #FFFFFF;
+}
+#menu-item-getstarted{
+    background-color: var(--third-color);
+    color: var(--main-color);
+}
+#carousel-text-button{
+    background-color: #DDE2E3;
+    color: var(--main-color);
+}
+#wave{
+    margin-top: -15%;
+}
+#logo-image{
+    height: 50px;
+    width: 50px;
+}
+
+#carousel-img{
+    height: 400px;
+}
+
+#academic-img{
+    height: auto;
+}
+
+#achievement img{
+    height: 250px;
+}
+
+@media(max-width: 390px){
+    #carousel-img{
+        height: 300px;
+    }
+
+    #logo-bottom{
+        visibility: hidden;
+    }
+}
+
+@media(min-width: 995px){
+    #academic-img{
+        height: 275px;
+        width: 400px;
+    }
+}
+
+#history{
+    margin-top: -3%;
+}
+
+#footer{
+    background-color: var(--main-color);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* step indicator */
+.step{
+    align-content: center;
+    position: relative;
+}
+/* titik ketika terpilih */
+.dot-step{
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--second-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.dot{
+    background-color: var(--main-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* titik ketika belum terpilih */
+.step.unclear .dot-step{
+    background-color: #c3c3c3;
+}
+.step.unclear .dot{
+    background-color: #ffffff;
+}
+
+/* Garis default indicator */
+.step .progress{
+    background-color: #c3c3c3;
+    height: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 0%;
+    margin-left: 50%;
+}
+
+.step:last-child .progress{
+    width: 0%;
+}
+
+.step.clear .progress{
+    background-color: var(--second-color);
+    height: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 0%;
+}
+
+.step.current p{
+    visibility: visible;
+}
+
+.step p{
+    visibility: hidden;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#pillcollapse{
+    width: 40px;
+    transition: ease-in-out 0.4s;
+}
+#hoverbutton:hover #pillcollapse{
+    width: 150px;
+}
+
+
+#icon-facebook, #icon-instagram, #icon-linkedin, #icon-whatsapp, #icon-gitlab{
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+#hoverbutton:hover #icon-facebook{
+    background-color: #3C5898;
+    color: #f8f9fa;
+}
+
+#hoverbutton:hover #icon-gitlab{
+    background-color: #FCA326;
+    color: #f8f9fa;
+}
+
+#hoverbutton:hover #icon-linkedin{
+    background-color: #007BB5;
+    color: #f8f9fa;
+}
+
+#hoverbutton:hover #icon-instagram{
+    background-color: #DD2A7B;
+    color: #f8f9fa;
+}
+
+#hoverbutton:hover #icon-whatsapp{
+    background-color: #25D366;
+    color: #f8f9fa;
+}
+
+#my-button{
+    background-color: white;
+    color: var(--main-color);
+}
+
+#my-button:hover{
+    background-color: var(--second-color);
+    color: white;
+}
+
+#my-button-2{
+    background-color: white;
+    border: var(--second-color) solid 1px;
+    color: var(--second-color);
+}
+
+#my-button-2:hover{
+    background-color: var(--main-color);
+    color: white;
+    border: var(--main-color) solid 1px;
+}
+
+#my-button-3{
+    background-color: var(--second-color);
+    color: white;
+}
